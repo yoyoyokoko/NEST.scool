@@ -1,0 +1,474 @@
+@charset "utf=8";
+
+/*=========================================
+     リセットcss
+     ======================================*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  text-decoration: none;
+}
+ins {
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+}
+mark {
+  background-color: #fff;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+
+/*===============================================
+全体設定
+================================================*/
+body {
+  color: #474747;
+  font-size: 14px;
+  line-height: 1.4em;
+  font-family: "メイリオ", "meiryo", sans-serif;
+  -webkit-font-smoothing: antialoased;
+  -moz-osx-smooothing: grayscale;
+}
+
+a {
+  color: #474747;
+  text-decoration: none;
+}
+
+/* micro clrarfix */
+.cf::before,
+.cf::after {
+  content: "";
+  display: table;
+}
+.cf::after {
+  clear: both;
+}
+
+/*===============================================
+ヘッダー
+================================================*/
+
+header {
+  width: 100%;
+  height: 36px;
+  border-top: 4px solid #e66464;
+  padding: 25px 0;
+}
+
+div#header_inner {
+  width: 978px;
+  height: 36px;
+  margin: 0 auto;
+}
+
+header h1 {
+  float: left;
+}
+
+header nav {
+  float: right;
+  margin-top: 19px;
+}
+
+header nav ul {
+  border-right: 1px solid #e8e8e8;
+}
+
+header nav ul li {
+  float: left;
+  border-left: 1px solid #e8e8e8;
+  font-size: 16px;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+/*===============================================
+メイン画像
+================================================*/
+div#mainimage {
+  width: 100%;
+  height: 392px;
+  background: url(image/NSTscool-_08.jpg) no-repeat top center;
+}
+
+div#mainimage_text {
+  width: 978px;
+  height: auto;
+  margin: 0 auto;
+  padding: 60px;
+}
+
+div#mainimage_text p {
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 900;
+  letter-spacing: 7px;
+  margin-bottom: 20px;
+}
+
+div#mainimage_text dl {
+  width: 373px;
+}
+
+div#mainimage_text dl dd {
+  margin: 20px 0;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+/*===============================================
+授業内容
+================================================*/
+
+div#introduction {
+  width: 100%;
+  height: auto;
+  background-color: #ed7c7c;
+}
+
+div#introduction_wapper {
+  width: 978px;
+  height: auto;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+div#introduction_title {
+  width: 100%;
+  height: 43px;
+  margin-bottom: 30px;
+}
+
+div#introduction_title h3 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 900;
+  border-bottom: 4px solid #fff;
+  display: inline-block;
+  padding-bottom: 15px;
+  margin-right: 20px;
+}
+
+div#introduction_title span {
+  color: #fff;
+  font-size: 14px;
+}
+
+div#teacher_list {
+  width: 632px;
+  height: 222px;
+  background-color: #fff;
+  float: left;
+  padding: 15px;
+}
+
+div#teacher_list h4 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+div#teacher_list ul li {
+  width: 200px;
+  height: auto;
+  float: left;
+  margin-right: 16px;
+}
+
+div#teacher_list ul li#list_last {
+  margin-right: 0;
+}
+
+div#teacher_list dl dt {
+  height: 131px;
+  margin-bottom: 8px;
+}
+
+div#teacher_list dl dd.teacher_name {
+  font-size: 14px;
+  font-weight: 900;
+}
+
+div#teacher_list dl dd.teacher_comment {
+  font-size: 142px;
+  line-height: 18px;
+}
+
+div#course_list {
+  width: 286px;
+  height: auto;
+  background-color: #fff;
+  float: right;
+}
+
+div#course_list h4 {
+  font-size: 18px;
+  font-weight: 900;
+  padding: 15px 15px 10px 15px;
+}
+
+div#course_list ul li {
+  border-top: 1px solid#eae9e7;
+  padding: 15px;
+}
+
+div#course_list ul li a {
+  display: block;
+  height: 37px;
+  width: auto;
+  line-height: 37px;
+  padding-left: 50px;
+}
+
+div#course_list ul li#ps a {
+  background: url(image/NSTscool-_26.jpg) no-repeat left center;
+}
+
+div#course_list ul li#ai a {
+  background: url(image/NSTscool-_29.jpg) no-repeat left center;
+}
+
+div#course_list ul li#pr a {
+  background: url(image/NSTscool-_33.jpg) no-repeat left center;
+}
+
+div#course_list ul li#fw a {
+  background: url(image/NSTscool-_41.jpg) no-repeat left center;
+}
+
+div#course_list ul li#dw a {
+  background: url(image/NSTscool-_44.jpg) no-repeat left center;
+}
+
+/*===============================================
+料金体制
+================================================*/
+div#price {
+  width: 100%;
+  height: 453px;
+  background-color: #fcfbfd;
+}
+div#price_wrapper {
+  width: 978px;
+  height: auto;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+div#price div#price_title {
+  width: 100%;
+  height: 43px;
+  margin-bottom: 30px;
+}
+
+div#price div#price_title h3 {
+  font-size: 24px;
+  font-weight: 900;
+  color: #474747;
+  display: inline-block;
+  border-bottom: 4px solid#e56d7c;
+  padding-bottom: 15px;
+  margin-right: 28px;
+}
+
+div#price ul li {
+  width: 276px;
+  height: 290px;
+  background-color: #fff;
+  padding: 15px;
+  float: left;
+  margin-right: 30px;
+  position: relative;
+}
+
+div#price ul li#price_last_list {
+  margin-right: 0;
+}
+
+div#price ul li p.plan {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+div#price ul li p.price {
+  color: #e56d7c;
+  font-size: 28px;
+  font-weight: 900;
+  margin: 15px 0 30px 0;
+}
+
+div#price ul li p.price span {
+  font-size: 16px;
+  margin-left: 10px;
+}
+
+div#price dl dd {
+  border-bottom: 1px dotted #eae9e7;
+}
+
+div#price dl dd {
+  border-top: 1px dotted #eae9e7;
+  line-height: 45px;
+}
+
+div#price a {
+  color: #fff;
+  font-weight: 900;
+  background-color: #e56d7c;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 0 25px;
+  line-height: 36px;
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+}
+
+/*===============================================
+フッター
+================================================*/
+footer {
+  width: 100%;
+  height: 73px;
+  background-color: #474747;
+  color: #fff;
+  text-align: center;
+  line-height: 73px;
+}
